@@ -299,17 +299,23 @@ footer {
     ;
 }
 
+.imagem-response {
+    display: none;
+}
+
 @media screen and (max-width: 430px) {
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+    }
     .laranja,
     header,
     footer,
     .conteiner,
-    .depoimentos {
-        width: 120vh;
-    }
+    .depoimentos,
     .image-eggs img,
     .image-cup img {
-        width: 120vh;
+        width: 121vh;
     }
     .informations-images {
         display: flex;
@@ -325,15 +331,39 @@ footer {
     }
     .col-md-6.tangerina,
     .col-md-6.cereja {
-        width: 122vh;
+        width: 123vh;
     }
     .clients.conteiner {
         display: flex;
         flex-direction: column;
     }
-    .imagens:nth-child(3n -1) {
-        margin-right: 0;
-        flex-wrap: wrap;
+    .imagens {
+        display: none;
+    }
+    .responsive-images {
+        display: block;
+    }
+    .imagens-responsivas {
         display: flex;
+    }
+    .imagem-response {
+        display: flex;
+    }
+    .leite,
+    .sorvete,
+    .acucar,
+    .rodela {
+        width: 64vh;
+    }
+    .col-md-6.information-eggs,
+    .col-md-6.information-cup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .texto-central-imagens-cereja,
+    .texto-central-imagens-tangerina {
+        margin: 60% auto;
     }
 }
